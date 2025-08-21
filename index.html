@@ -7,63 +7,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-  <div class="logo-container">
-    <img src="logo/logo.png" alt="Logo VTP" class="logo">
-    <h1>VIHOUNOU TECH ET PLUS</h1>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Formations</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<section id="accueil" class="hero">
-    <section id="services" class="services">
-        <section id="contact" class="contact">
-  <h2>Contactez-nous</h2>
-  <form id="contactForm">
-    <input type="text" id="nom" placeholder="Votre nom" required>
-    <input type="email" id="email" placeholder="Votre email" required>
-    <textarea id="message" placeholder="Votre message" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-  <p id="feedback"></p>
-</section>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="logo/logo.png" alt="Logo VTP" class="logo">
+      <h1>VIHOUNOU TECH ET PLUS</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h2>Nos Services</h2>
-  <div class="services-container">
-    <div class="service-card">
-      <h3>Développement logiciel</h3>
-      <p>Création de logiciels personnalisés pour entreprises et particuliers.</p>
+  <!-- ACCUEIL -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <h2>Bienvenue chez VIHOUNOU TECH ET PLUS</h2>
+      <p>Votre partenaire en informatique, formation et solutions digitales.</p>
+      <a href="#contact" class="btn">Contactez-nous</a>
     </div>
-    <div class="service-card">
-      <h3>Formations informatiques</h3>
-      <p>Formations professionnelles pour maîtriser l’informatique et le digital.</p>
-    </div>
-    <div class="service-card">
-      <h3>Solutions mobiles</h3>
-      <p>Applications mobiles et solutions de gestion pour entreprises.</p>
-    </div>
-    <div class="service-card">
-      <h3>Support & Maintenance</h3>
-      <p>Assistance technique et maintenance pour vos systèmes et réseaux.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-  <div class="hero-content">
-    <h2>Bienvenue chez VIHOUNOU TECH ET PLUS</h2>
-    <p>Votre partenaire en informatique, formation et solutions digitales.</p>
-    <a href="#contact" class="btn">Contactez-nous</a>
-  </div>
-</section>
-
-  <section id="services">
+  <!-- SERVICES -->
+  <section id="services" class="services">
     <h2>Nos Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Développement logiciel</h3>
+        <p>Création de logiciels personnalisés pour entreprises et particuliers.</p>
+      </div>
+      <div class="service-card">
+        <h3>Formations informatiques</h3>
+        <p>Formations professionnelles pour maîtriser l’informatique et le digital.</p>
+      </div>
+      <div class="service-card">
+        <h3>Solutions mobiles</h3>
+        <p>Applications mobiles et solutions de gestion pour entreprises.</p>
+      </div>
+      <div class="service-card">
+        <h3>Support & Maintenance</h3>
+        <p>Assistance technique et maintenance pour vos systèmes et réseaux.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATIONS -->
+  <section id="formations">
+    <h2>Nos Formations</h2>
     <ul>
       <li>Développement de logiciels</li>
       <li>Formation informatique</li>
@@ -72,7 +66,8 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
     <h2>Contactez-nous</h2>
     <form id="contactForm">
       <input type="text" id="nom" placeholder="Votre nom" required>
@@ -82,26 +77,30 @@
     </form>
     <p id="feedback"></p>
   </section>
-<footer>
-  <div class="footer-container">
-    <p>&copy; 2025 VIHOUNOU TECH ET PLUS. Tous droits réservés.</p>
-    <div class="footer-links">
-      <a href="#">Accueil</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="social-icons">
-      <a href="#"><img src="logo/facebook.png" alt="facebook"></a>
-      <a href="#"><img src="logo/twitter.png" alt="twitter"></a>
-      <a href="#"><img src="logo/linkedIn.png" alt="linkedIn"></a>
-    </div>
-  </div>
-</footer>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 VIHOUNOU TECH ET PLUS | <a href="mailto:contact@vihounoutp.com">vihounoutp@gmail.com</a></p>
+    <div class="footer-container">
+      <p>&copy; 2025 VIHOUNOU TECH ET PLUS. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#formations">Formations</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><img src="logo/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="logo/twitter.png" alt="twitter"></a>
+        <a href="#"><img src="logo/linkedin.png" alt="linkedin"></a>
+      </div>
+    </div>
+    <p><a href="mailto:vihounoutp@gmail.com">vihounoutp@gmail.com</a></p>
   </footer>
+</body>
+</html>
+
 
   <script src="script.js"></script>
 </body>
 </html>
+
